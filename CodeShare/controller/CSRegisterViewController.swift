@@ -100,22 +100,35 @@ class CSRegisterViewController: UIViewController {
             make.center.equalTo(0)
         }
         
-        let getMessageBtn = UIButton(type: .Custom)
-        //getMessageBtn.frame = CGRectMake(0, 0, 100, 48)
-        getMessageBtn.titleLabel?.font = UIFont.systemFontOfSize(15)
-        getMessageBtn.setTitleColor(UIColor.greenColor(), forState: UIControlState.Normal)
-        getMessageBtn.setTitle("获取验证码", forState: UIControlState.Normal)
-        getMessageBtn.backgroundColor = UIColor.blueColor()
-        getMessageBtn.jk_handleControlEvents(UIControlEvents.TouchUpInside) { (message) in
-            print("短信验证码")
-        }
+        let messageRight = UIView()
+        let messageBtn = UIButton(type: .Custom)
+        messageBtn.setTitle("获取验证码", forState: .Normal)
+        messageBtn.titleLabel?.font = UIFont.systemFontOfSize(15)
+        messageBtn.setTitleColor(UIColor.orangeColor(), forState: .Normal)
+        messageBtn.layer.borderColor = UIColor.lightGrayColor().CGColor
+        messageBtn.layer.borderWidth = 1.0
+        //设置视图的圆角
+        messageBtn.layer.cornerRadius = 3.0
+        //设置让背景颜色在视图的范围内
+        messageBtn.layer.masksToBounds = true
+        messageBtn.jk_setBackgroundColor(UIColor.lightGrayColor(), forState: .Disabled)
+        messageBtn.jk_setBackgroundColor(UIColor.whiteColor(), forState: .Normal)
+        messageBtn.jk_setBackgroundColor(UIColor.darkGrayColor(), forState: .Highlighted)
+        testMessage.rightView = messageRight
         testMessage.rightViewMode = .Always
-        testMessage.rightView = getMessageBtn
-        getMessageBtn.snp_makeConstraints { (make) in
-            make.size.equalTo(CGSizeMake(100, 40))
+        messageRight.snp_makeConstraints { (make) in
+            make.height.equalTo(40)
+            make.width.equalTo(110)
         }
-        
-        
+        messageRight.addSubview(messageBtn)
+        messageBtn.snp_makeConstraints { (make) in
+            make.center.equalTo(0)
+            make.left.equalTo(8)
+            make.top.equalTo(4)
+        }
+        messageBtn.jk_addActionHandler { (message) in
+            
+        }
         //注册按钮
         let register = UIButton()
         
