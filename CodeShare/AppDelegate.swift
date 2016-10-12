@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -20,7 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //封装设置window根控制器
         configureRootVc()
         
+        //设置 MobSMSSDK
+        setupMob()
+        
         return true
+    }
+    //设置 MobSMSSDK方法
+    func setupMob() {
+        SMSSDK.registerApp(MobApp, withSecret: MobSecret)
     }
     //自己封装设置window根控制器
     func configureRootVc() {

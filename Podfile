@@ -9,4 +9,15 @@ target 'CodeShare' do
 
    pod "JKCategories"
    pod "Alamofire", "~> 3.0"
+   
+   # MOb产品公共库
+   pod "MOBFoundation_IDFA"
+   #短信发送 SDK
+   pod "SMSSDK"
+   # 这个框架是 GitHub 官方团队开源的一个用于 iOS 上的函数响应
+   pod "ReactiveCocoa", "~> 4.0"
+   #处理项目中所有的键盘问题
+   pod "IQKeyboardManager", "~> 3.0"
+   #全屏侧滑
+   pod "FDFullscreenPopGesture"
 end

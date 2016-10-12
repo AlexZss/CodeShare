@@ -13,6 +13,8 @@ import Alamofire
 
 class CSLoginViewController: UIViewController {
 
+    let userName = UITextField.init()
+    let password = UITextField.init()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +23,6 @@ class CSLoginViewController: UIViewController {
         self.view.backgroundColor = UIColor.whiteColor()
         
         //
-        let userName = UITextField.init()
         userName.placeholder = "请输入邮箱或者手机号码"
         userName.font = UIFont.systemFontOfSize(15)
         userName.backgroundColor = UIColor.whiteColor()
@@ -39,7 +40,7 @@ class CSLoginViewController: UIViewController {
         userName.layer.borderColor = UIColor.grayColor().CGColor
         userName.layer.borderWidth = 1.0
         
-        let password = UITextField.init()
+        //设置密码
         password.placeholder = "请输入密码"
         password.font = UIFont.systemFontOfSize(15)
         password.backgroundColor = UIColor.whiteColor()
@@ -115,8 +116,8 @@ class CSLoginViewController: UIViewController {
             //18289568927 123456
             Alamofire.request(.POST, "https://www.1000phone.tk", parameters: [
                 "service": "User.Login",
-                "phone": userName.text!,
-                "password": password.text!,
+                "phone": self.userName.text!,
+                "password": self.password.text!,
                 ], encoding: ParameterEncoding.URLEncodedInURL, headers: nil).responseJSON(completionHandler: { (response) in
                     //请求成功
                     if response.result.isSuccess {
