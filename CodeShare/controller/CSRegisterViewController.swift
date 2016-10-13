@@ -15,10 +15,15 @@ import Alamofire
 //订阅并注册的方法
 import ReactiveCocoa
 
-class CSRegisterViewController: UIViewController {
+class CSRegisterViewController: ViewController {
 
     dynamic var time = -1
     var timer: NSTimer!
+    
+    var text1 = false
+    var text2 = false
+    var text3 = false
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +34,8 @@ class CSRegisterViewController: UIViewController {
         
         //注册名字
         let registerName = UITextField.init()
-        registerName.delegate = self
+        //registerName.delegate = self
+        registerName.tag = 100
         registerName.placeholder = "请输入邮箱或者手机号"
         registerName.font = UIFont.systemFontOfSize(15)
         registerName.backgroundColor = UIColor.whiteColor()
@@ -46,6 +52,8 @@ class CSRegisterViewController: UIViewController {
         let registerPassword = UITextField.init()
         registerPassword.placeholder = "请输入密码"
         registerPassword.secureTextEntry = true
+        //registerPassword.delegate = self
+        registerPassword.tag = 101
         registerPassword.font = UIFont.systemFontOfSize(15)
         registerPassword.backgroundColor = UIColor.whiteColor()
         registerPassword.layer.backgroundColor = UIColor.whiteColor().CGColor
@@ -84,6 +92,8 @@ class CSRegisterViewController: UIViewController {
         //短信
         let testMessage = UITextField()
         testMessage.placeholder = "请输入验证码"
+        //testMessage.delegate = self
+        testMessage.tag = 102
         testMessage.font = UIFont.systemFontOfSize(15)
         testMessage.backgroundColor = UIColor.whiteColor()
         testMessage.layer.backgroundColor = UIColor.whiteColor().CGColor
@@ -143,7 +153,8 @@ class CSRegisterViewController: UIViewController {
                 self.time = self.time - 1
                 }, repeats: true) as! NSTimer
             //获取验证码
-            SMSSDK.getVerificationCodeByMethod(SMSGetCodeMethod.init(0), phoneNumber: registerName.text, zone: "86", customIdentifier: nil) { (error) in
+            SMSSDK.getVerificationCodeByMethod(SMSGetCodeMethod.init(1), phoneNumber: registerName.text, zone: "86", customIdentifier: nil) { (error) in
+                print(error)
                 //因为只是测试，没有打开真实的返回
 //                if (error != nil) {
                     //print(error)
@@ -160,7 +171,7 @@ class CSRegisterViewController: UIViewController {
        
         //注册按钮
         let register = UIButton()
-        
+        register.tag = 1000
         register.titleLabel?.font = UIFont.systemFontOfSize(15)
         register.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         register.setTitle("注册", forState: UIControlState.Normal)
@@ -180,21 +191,34 @@ class CSRegisterViewController: UIViewController {
         //service=User.Register&phone=18289568927&password=123456&verificationCode=1234
         register.jk_handleControlEvents(UIControlEvents.TouchUpInside) { (sender) in
             
-            Alamofire.request(.POST, "https://www.1000phone.tk", parameters: [
+//            Alamofire.request(parameters: [
+//                "service": "User.Register",
+//                "phone": registerName.text!,
+//                "password": (registerPassword.text! as NSString).jk_md5String,
+//                "verificationCode": testMessage.text!
+//                ], encoding: ParameterEncoding.URLEncodedInURL, headers: nil).responseJSON(completionHandler: { (response) in
+//                    //请求成功
+//                    if response.result.isSuccess {
+//                        print(response.result.value!)
+//                        //注册成功，返回登陆界面
+//                        self.navigationController?.popViewControllerAnimated(true)
+//                    }else {
+//                        print("网络不通畅，请稍后再试")
+//                    }
+//                })
+            CSNetHelp.request( parmaters: [
                 "service": "User.Register",
                 "phone": registerName.text!,
                 "password": (registerPassword.text! as NSString).jk_md5String,
                 "verificationCode": testMessage.text!
-                ], encoding: ParameterEncoding.URLEncodedInURL, headers: nil).responseJSON(completionHandler: { (response) in
-                    //请求成功
-                    if response.result.isSuccess {
-                        print(response.result.value!)
-                        //注册成功，返回登陆界面
+                ]).responseJSON { (data, success) in
+                    if success {
+                        print(data)
                         self.navigationController?.popViewControllerAnimated(true)
                     }else {
-                        print("网络不通畅，请稍后再试")
+                        UIAlertView(title: "错误", message: data as? String, delegate: nil, cancelButtonTitle: "确定").show()
                     }
-                })
+            }
         }
         
         //
@@ -219,6 +243,10 @@ class CSRegisterViewController: UIViewController {
         //将几个信号合并为一个信号,订阅并改变注册按钮的状态
         //冷信号 
         //combine(使结合) subscribe(订购，订阅)
+
+
+
+        
         registerName.rac_textSignal()
         .combineLatestWith(registerPassword.rac_textSignal())
         .combineLatestWith(testMessage.rac_textSignal())
@@ -228,6 +256,10 @@ class CSRegisterViewController: UIViewController {
                 (registerPassword.text! as NSString).length >= 6 &&
                 (testMessage.text! as NSString).length == 4)
         }
+ 
+ 
+ 
+ 
         //热信号
     //        registerName.rac_textSignal().toSignalProducer()
     //        .combineLatestWith(registerPassword.rac_textSignal().toSignalProducer())
@@ -247,7 +279,7 @@ class CSRegisterViewController: UIViewController {
         //将变量的改变当作信号亮来订阅(代替 kvo)
         //使用MVC思想，如果数据变了，界面也需要改变
         self.rac_valuesForKeyPath("time", observer: self).subscribeNext { (time) in
-            print(time)
+            //print(time)
             //关闭定时器且重置button
             messageBtn.enabled = self.time == -1
             if self.time == -1 {
@@ -258,7 +290,7 @@ class CSRegisterViewController: UIViewController {
             }else {
                 messageBtn.setTitle("还剩\(self.time)秒", forState: .Normal)
             }
-
+            
         }
         //处理键盘遮挡试图的问题 (代替通知)
         //NSNotificationCenter.defaultCenter().addObserver(UIKeyboardWillChangeFrameNotification, selector: "jianpan", name: "time", object: nil)
@@ -268,7 +300,7 @@ class CSRegisterViewController: UIViewController {
             //取出通知携带的键盘信息
             let userInfo = (notif as! NSNotification).userInfo!
             //
-            //let rect = userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue
+            let rect = userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue
             //print(rect.CGRectValue())
             
             //用 SnapKit 给注册按钮做一个动画
@@ -306,9 +338,76 @@ class CSRegisterViewController: UIViewController {
 
 extension CSRegisterViewController: UITextFieldDelegate {
     
+    /*
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         
+        print(range.location)
+        print(range.length)
+        print(textField.text?.characters.count)
+        print("")
+        
+        let registerBtn =  self.view.viewWithTag(1000) as! UIButton
+        if textField.tag == 100{
+            if range.location == 10{
+                text1 = true
+            }else {
+                text1 = false
+            }
+        }else if textField.tag == 101 {
+            if range.location >= 5{
+                text2 = true
+            }else {
+                text2 = false
+            }
+        }else if textField.tag == 102 {
+            if range.length == 0{
+                if range.location == 3{
+                    text3 = true
+                }else {
+                    text3 = false
+                }
+            }else{
+                if range.location == 4{
+                    text3 = true
+                }else {
+                    text3 = false
+                }
+            }
+        
+        }
+        
+        
+        if text1 == true && text2 == true && text3 == true {
+            print("true")
+            registerBtn.enabled = true
+        }else {
+            print("false")
+            registerBtn.enabled = false
+        }
+        
+        
+        /*
+        let textField1 = (self.view.viewWithTag(100) as! UITextField).text! as NSString
+        let textField2 = (self.view.viewWithTag(101) as! UITextField).text! as NSString
+        let textField3 = (self.view.viewWithTag(102) as! UITextField).text! as NSString
+        
+        print(textField3)
+        
+        let registerBtn =  self.view.viewWithTag(1000) as! UIButton
+        
+        print("\(textField1.length)   \(textField2.length)   \(textField3.length)")
+        
+        if (textField1.length >= 10) && (textField2.length >= 5) && (textField3.length >= 3) {
+            print("yesyesyes")
+            registerBtn.enabled = true
+        }else{
+            print("nonononono")
+            registerBtn.enabled = false
+        }
+        */
+        
+        /*
         let str = textField.text! as NSString
         
         print(range.length) //改变字符串的长度 如果删除n个字符，则返回n
@@ -317,15 +416,17 @@ extension CSRegisterViewController: UITextFieldDelegate {
         if range.length == 1{
             return true
         }
-        
+    
         if str.length == 11{
             textField
             print("chage")
             return false
         }
-        
+        */
+     
         return true
         
     }
+ */
 
 }

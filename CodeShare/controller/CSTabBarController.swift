@@ -23,23 +23,23 @@ class CSTabBarController: UITabBarController {
         let vcInfos = [
             [
                 "title": "主页",
-                "image": "tabbar_1",
-                "class": "UIViewController",
+                "image": "按钮主页",
+                "class": "CodeShare.ViewController",
             ],
             [
                 "title": "消息",
-                "image": "tabbar_1",
-                "class": "UIViewController",
+                "image": "按钮消息",
+                "class": "CodeShare.ViewController",
             ],
             [
                 "title": "分享",
-                "image": "tabbar_1",
-                "class": "UIViewController",
+                "image": "按钮分享",
+                "class": "CodeShare.ViewController",
             ],
             [
                 "title": "我的",
-                "image": "tabbar_1",
-                "class": "UIViewController",
+                "image": "按钮我的",
+                "class": "CodeShare.CSMyViodeListViewController",
             ],
         ]
         
@@ -49,19 +49,33 @@ class CSTabBarController: UITabBarController {
             let vc = (NSClassFromString(vcInfo["class"]!) as! UIViewController.Type).init()
 
             vc.title = vcInfo["title"]
-            vc.view.backgroundColor = UIColor.whiteColor()
+            //vc.view.backgroundColor = UIColor.whiteColor()
+            
             let navVC = UINavigationController.init(rootViewController: vc)
             vcArr.append(navVC)
         }
         self.viewControllers = vcArr
+        
+        //设置 tabBar 按钮图片
+        var i = 0
+        for tabBarItem in self.tabBar.items! {
+            tabBarItem.image = UIImage.init(named: vcInfos[i]["image"]!)
+            i = i + 1
+        }
+        
+        //设置选中状态下的 tabBar 颜色
+        self.tabBar.tintColor = UIColor(red: 0.5089, green: 0.7681, blue: 0.1978, alpha: 1.0)
     }
     
     override func viewDidAppear(animated: Bool) {
         // 重写控制器的生命周期方法时，最好调用父类实现
         super.viewDidAppear(animated)
+        //如果用户未登录，才弹出登录界面
+        if CSUserModel.isLogin() == false {
+            let loginVC = UINavigationController.init(rootViewController: CSLoginViewController.init())
+            self.presentViewController(loginVC, animated: true, completion: nil)
+        }
         
-        let loginVC = UINavigationController.init(rootViewController: CSLoginViewController.init())
-        self.presentViewController(loginVC, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

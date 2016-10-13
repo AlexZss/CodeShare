@@ -210,7 +210,6 @@
 #import "UIWebView+JKMetaParser.h"
 #import "UIWebView+JKStyle.h"
 #import "UIWebVIew+JKSwipeGesture.h"
-#import "UIWebView+JKTS_JavaScriptContext.h"
 #import "UIWindow+JKHierarchy.h"
 
 FOUNDATION_EXPORT double JKCategoriesVersionNumber;

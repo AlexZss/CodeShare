@@ -11,7 +11,7 @@ import SnapKit
 import JKCategories
 import Alamofire
 
-class CSLoginViewController: UIViewController {
+class CSLoginViewController: ViewController {
 
     let userName = UITextField.init()
     let password = UITextField.init()
@@ -114,20 +114,34 @@ class CSLoginViewController: UIViewController {
         //按钮的响应事件
         login.jk_handleControlEvents(UIControlEvents.TouchUpInside) { (sender) in
             //18289568927 123456
-            Alamofire.request(.POST, "https://www.1000phone.tk", parameters: [
+//            Alamofire.request(.POST, "https://www.1000phone.tk", parameters: [
+//                "service": "User.Login",
+//                "phone": self.userName.text!,
+//                "password": self.password.text!,
+//                ], encoding: ParameterEncoding.URLEncodedInURL, headers: nil).responseJSON(completionHandler: { (response) in
+//                    //请求成功
+//                    if response.result.isSuccess {
+//                        print(response.result.value!)
+//                        //登录成功，返回登陆界面
+//                        self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+//                    }else {
+//                        print("网络不通畅，请稍后再试")
+//                    }
+//                })
+            CSNetHelp.request(parmaters: [
                 "service": "User.Login",
                 "phone": self.userName.text!,
-                "password": self.password.text!,
-                ], encoding: ParameterEncoding.URLEncodedInURL, headers: nil).responseJSON(completionHandler: { (response) in
-                    //请求成功
-                    if response.result.isSuccess {
-                        print(response.result.value!)
-                        //登录成功，返回登陆界面
+                "password": (self.password.text! as NSString).jk_md5String,
+                ]).responseJSON { (data, success) in
+                    if success {
+                        //配置用户数据
+                        CSUserModel.loggin(with: data as! [String: AnyObject])
                         self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+                        //print(data)
                     }else {
-                        print("网络不通畅，请稍后再试")
+                        UIAlertView(title: "错误", message: data as? String, delegate: nil, cancelButtonTitle: "确定").show()
                     }
-                })
+            }
         }
         login.snp_makeConstraints { (make) in
             make.left.equalTo(0)
@@ -137,13 +151,13 @@ class CSLoginViewController: UIViewController {
         }
         
         //导航条
-        let backButton = UIButton.init(type: UIButtonType.Custom)
-        backButton.setImage(UIImage(named: "返回按钮"), forState: UIControlState.Normal)
-        backButton.addTarget(self, action: #selector(CSLoginViewController.back), forControlEvents: .TouchUpInside)
-        
-        let backBarButton = UIBarButtonItem.init(customView: backButton)
-        self.navigationItem.leftBarButtonItem = backBarButton
-        backButton.frame = CGRectMake(0, 0, 24, 32)
+//        let backButton = UIButton.init(type: UIButtonType.Custom)
+//        backButton.setImage(UIImage(named: "返回按钮"), forState: UIControlState.Normal)
+//        backButton.addTarget(self, action: #selector(CSLoginViewController.back), forControlEvents: .TouchUpInside)
+//        
+//        let backBarButton = UIBarButtonItem.init(customView: backButton)
+//        //self.navigationItem.leftBarButtonItem = backBarButton
+//        backButton.frame = CGRectMake(0, 0, 24, 32)
         
         let registerButton = UIButton.init(type: UIButtonType.Custom)
         registerButton.setTitle("注册", forState: .Normal)
@@ -161,7 +175,6 @@ class CSLoginViewController: UIViewController {
     }
     //registerButtonAction
     func register() {
-        
         self.navigationController?.pushViewController(CSRegisterViewController.init(), animated: true)
     }
 

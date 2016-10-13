@@ -20,4 +20,6 @@ target 'CodeShare' do
    pod "IQKeyboardManager", "~> 3.0"
    #全屏侧滑
    pod "FDFullscreenPopGesture"
+   #YYKit
+   #pod "YYKit", "~> 0.0"
 end

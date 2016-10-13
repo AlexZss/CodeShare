@@ -6,10 +6,17 @@
 //  Copyright © 2016年 Alex. All rights reserved.
 //
 
+
+
 import Foundation
 
 //网络请求的基地址
-let QFAppBaseURL = "http://www.1000phone.ml/"
+#if false
+let QFAppBaseURl = "http://10.12.155.20/PhalApi/Public/Codeshare/"
+#else
+let QFAppBaseURl = "http://www.1000phone.tk/"
+#endif
+//let QFAppBaseURL = "http://10.12.155.20/PhalApi/Public/Codeshare/listAllApis.php"
 //图片资源的基地址
 let QFResourceBaseUrl = "http://www.1000phone.tk/upload/QFApi"
 //短信发送的SDK的 appKey 和 appSecret

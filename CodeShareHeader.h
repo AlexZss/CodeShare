@@ -10,5 +10,5 @@
 #define CodeShareHeader_h
 
 #import <SMS_SDK/SMSSDK.h>
-
+#import "YYKit.h"
 #endif /* CodeShareHeader_h */
