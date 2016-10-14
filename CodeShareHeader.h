@@ -11,4 +11,7 @@
 
 #import <SMS_SDK/SMSSDK.h>
 #import "YYKit.h"
+//第三方界面滑动的库
+#import "YZDisplayViewHeader.h"
+
 #endif /* CodeShareHeader_h */

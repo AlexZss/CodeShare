@@ -12,6 +12,14 @@ class CSMyViodeListViewController: CSTableViewController {
     //构造假数据
     var cellInfos: [[String: AnyObject]] = []
     //模拟数据模型
+    //
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(withStyle: .Plain)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     var cellModels: [AnyObject] = []
     //
     var index = 100
@@ -28,8 +36,6 @@ class CSMyViodeListViewController: CSTableViewController {
         getData()
     }
     
-    //
-        //
     func getData() {
         
             cellInfos = [
@@ -44,6 +50,35 @@ class CSMyViodeListViewController: CSTableViewController {
                     "viodeoUrl":"http://www.baidu.com"
                 ],
                 [
+                    "title":"河南政府吃饭打白条欠120万",
+                    "imageUrl":"视频",
+                    "viodeoUrl":"http://www.baidu.com"
+                ],
+                [
+                    "title":"河南政府吃饭打白条欠120万",
+                    "imageUrl":"视频",
+                    "viodeoUrl":"http://www.baidu.com"
+                ],
+                [
+                    "title":"河南政府吃饭打白条欠120万",
+                    "imageUrl":"视频",
+                    "viodeoUrl":"http://www.baidu.com"
+                ],
+                [
+                    "title":"河南政府吃饭打白条欠120万",
+                    "imageUrl":"视频",
+                    "viodeoUrl":"http://www.baidu.com"
+                ],
+                [
+                    "title":"河南政府吃饭打白条欠120万",
+                    "imageUrl":"视频",
+                    "viodeoUrl":"http://www.baidu.com"
+                ],
+                [
+                    "title":"河南政府吃饭打白条欠120万",
+                    "imageUrl":"视频",
+                    "viodeoUrl":"http://www.baidu.com"
+                ],[
                     "title":"河南政府吃饭打白条欠120万",
                     "imageUrl":"视频",
                     "viodeoUrl":"http://www.baidu.com"
@@ -78,6 +113,10 @@ extension CSMyViodeListViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(String(CSMayVideoCell)) as! CSMayVideoCell
         cell.configure(withModel: cellModels[indexPath.row] as! CSMyVideoModel)
         return cell
-        
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //反选的效果
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }

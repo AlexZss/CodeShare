@@ -16,3 +16,12 @@ class CSMyVideoModel: NSObject {
     var videoSize: String?
     
 }
+
+class CSMyFileModel: NSObject {
+    
+    var title = ""
+    var imageUrl = ""
+    var fileSize = ""
+    var from = ""
+    
+}

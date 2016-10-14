@@ -298,9 +298,9 @@ class CSRegisterViewController: ViewController {
         .subscribeNext { (notif) in
             //print(notif) nitif 包含了所有的通知信息
             //取出通知携带的键盘信息
-            let userInfo = (notif as! NSNotification).userInfo!
+            //let userInfo = (notif as! NSNotification).userInfo!
             //
-            let rect = userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue
+            //let rect = userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue
             //print(rect.CGRectValue())
             
             //用 SnapKit 给注册按钮做一个动画

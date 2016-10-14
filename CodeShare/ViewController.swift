@@ -8,7 +8,7 @@
 
 import UIKit
 import JKCategories
-
+//基控制器
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -39,9 +39,13 @@ class ViewController: UIViewController {
                 backButton.frame = CGRectMake(0, 0, 16, 32)
                 let backItemBtm = UIBarButtonItem(customView: backButton)
                 self.navigationItem.leftBarButtonItem = backItemBtm
-        }else {
+        }
+        
+        //只有在不是present出的导航控制器的第二个控制器，需要添加这个属性
+        if self.navigationController?.presentationController == nil && self.navigationController?.viewControllers.count >= 2 && self.navigationController?.viewControllers[2] == self {
             self.hidesBottomBarWhenPushed = true
         }
+        
         
     }
     override func didReceiveMemoryWarning() {

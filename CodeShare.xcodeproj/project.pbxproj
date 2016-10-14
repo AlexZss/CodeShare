@@ -107,6 +107,17 @@
 		83F6C5D01DAC82770064601D /* CSLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6C5CF1DAC82770064601D /* CSLoginViewController.swift */; };
 		83F6C5D21DACBECE0064601D /* CSRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6C5D11DACBECE0064601D /* CSRegisterViewController.swift */; };
 		83F78A511DADD0F8004963D6 /* CodeShareInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A501DADD0F8004963D6 /* CodeShareInit.swift */; };
+		83F9E2801DB0695D00FC32CA /* Reusable+CSExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F9E27F1DB0695D00FC32CA /* Reusable+CSExtensions.swift */; };
+		83F9E2891DB06FB300FC32CA /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F9E2831DB06FB300FC32CA /* UIView+Frame.m */; };
+		83F9E28A1DB06FB300FC32CA /* YZDisplayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F9E2851DB06FB300FC32CA /* YZDisplayTitleLabel.m */; };
+		83F9E28B1DB06FB300FC32CA /* YZDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F9E2871DB06FB300FC32CA /* YZDisplayViewController.m */; };
+		83F9E28E1DB0713600FC32CA /* CSMyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F9E28D1DB0713600FC32CA /* CSMyInfoViewController.swift */; };
+		83F9E2901DB0767F00FC32CA /* CSMyFileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F9E28F1DB0767F00FC32CA /* CSMyFileListViewController.swift */; };
+		83F9E2931DB078A600FC32CA /* CsMyFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F9E2911DB078A600FC32CA /* CsMyFileCell.swift */; };
+		83F9E2941DB078A600FC32CA /* CsMyFileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83F9E2921DB078A600FC32CA /* CsMyFileCell.xib */; };
+		83F9E2961DB08B2900FC32CA /* CSMyPhotoLIstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F9E2951DB08B2900FC32CA /* CSMyPhotoLIstViewController.swift */; };
+		83F9E2981DB08DE600FC32CA /* CSMyPhotoColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F9E2971DB08DE600FC32CA /* CSMyPhotoColCell.swift */; };
+		83F9E29A1DB0B3E600FC32CA /* CSScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F9E2991DB0B3E600FC32CA /* CSScrollViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -296,6 +307,21 @@
 		83F6C5D11DACBECE0064601D /* CSRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSRegisterViewController.swift; sourceTree = "<group>"; };
 		83F78A501DADD0F8004963D6 /* CodeShareInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeShareInit.swift; sourceTree = "<group>"; };
 		83F78A521DADDD6F004963D6 /* CodeShareHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeShareHeader.h; sourceTree = "<group>"; };
+		83F9E27F1DB0695D00FC32CA /* Reusable+CSExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Reusable+CSExtensions.swift"; path = "../../YYKit/Reusable+CSExtensions.swift"; sourceTree = "<group>"; };
+		83F9E2821DB06FB300FC32CA /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		83F9E2831DB06FB300FC32CA /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		83F9E2841DB06FB300FC32CA /* YZDisplayTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayTitleLabel.h; sourceTree = "<group>"; };
+		83F9E2851DB06FB300FC32CA /* YZDisplayTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZDisplayTitleLabel.m; sourceTree = "<group>"; };
+		83F9E2861DB06FB300FC32CA /* YZDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayViewController.h; sourceTree = "<group>"; };
+		83F9E2871DB06FB300FC32CA /* YZDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZDisplayViewController.m; sourceTree = "<group>"; };
+		83F9E2881DB06FB300FC32CA /* YZDisplayViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayViewHeader.h; sourceTree = "<group>"; };
+		83F9E28D1DB0713600FC32CA /* CSMyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMyInfoViewController.swift; sourceTree = "<group>"; };
+		83F9E28F1DB0767F00FC32CA /* CSMyFileListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMyFileListViewController.swift; sourceTree = "<group>"; };
+		83F9E2911DB078A600FC32CA /* CsMyFileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CsMyFileCell.swift; sourceTree = "<group>"; };
+		83F9E2921DB078A600FC32CA /* CsMyFileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CsMyFileCell.xib; sourceTree = "<group>"; };
+		83F9E2951DB08B2900FC32CA /* CSMyPhotoLIstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMyPhotoLIstViewController.swift; sourceTree = "<group>"; };
+		83F9E2971DB08DE600FC32CA /* CSMyPhotoColCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMyPhotoColCell.swift; sourceTree = "<group>"; };
+		83F9E2991DB0B3E600FC32CA /* CSScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSScrollViewController.swift; sourceTree = "<group>"; };
 		BFDA753B862CBB51145DEBE5 /* Pods-CodeShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeShare/Pods-CodeShare.debug.xcconfig"; sourceTree = "<group>"; };
 		C97A355E385A986EE00685E1 /* Pods_CodeShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -592,6 +618,7 @@
 		83D798041DAF1FFD008BC675 /* help */ = {
 			isa = PBXGroup;
 			children = (
+				83F9E27F1DB0695D00FC32CA /* Reusable+CSExtensions.swift */,
 				83D798051DAF202D008BC675 /* CSNetHelp.swift */,
 				8336D7421DAF674600B22794 /* CSHelp.swift */,
 			);
@@ -601,7 +628,7 @@
 		83F6C5AC1DAC78040064601D = {
 			isa = PBXGroup;
 			children = (
-				8336D63E1DAF60BE00B22794 /* YYKit */,
+				83F9E28C1DB06FDD00FC32CA /* third */,
 				83F78A521DADDD6F004963D6 /* CodeShareHeader.h */,
 				83F6C5B71DAC78040064601D /* CodeShare */,
 				83F6C5B61DAC78040064601D /* Products */,
@@ -643,7 +670,11 @@
 				83F6C5CF1DAC82770064601D /* CSLoginViewController.swift */,
 				83F6C5D11DACBECE0064601D /* CSRegisterViewController.swift */,
 				8390FE8C1DAF8182002180BC /* CSTableViewController.swift */,
+				83F9E2991DB0B3E600FC32CA /* CSScrollViewController.swift */,
+				83F9E28D1DB0713600FC32CA /* CSMyInfoViewController.swift */,
 				8390FE8E1DAF8665002180BC /* CSMyViodeListViewController.swift */,
+				83F9E28F1DB0767F00FC32CA /* CSMyFileListViewController.swift */,
+				83F9E2951DB08B2900FC32CA /* CSMyPhotoLIstViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -662,8 +693,34 @@
 			children = (
 				8390FE921DAF8A47002180BC /* CSMayVideoCell.swift */,
 				8390FE931DAF8A47002180BC /* CSMayVideoCell.xib */,
+				83F9E2911DB078A600FC32CA /* CsMyFileCell.swift */,
+				83F9E2921DB078A600FC32CA /* CsMyFileCell.xib */,
+				83F9E2971DB08DE600FC32CA /* CSMyPhotoColCell.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		83F9E2811DB06FB300FC32CA /* YZDisplayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				83F9E2821DB06FB300FC32CA /* UIView+Frame.h */,
+				83F9E2831DB06FB300FC32CA /* UIView+Frame.m */,
+				83F9E2841DB06FB300FC32CA /* YZDisplayTitleLabel.h */,
+				83F9E2851DB06FB300FC32CA /* YZDisplayTitleLabel.m */,
+				83F9E2861DB06FB300FC32CA /* YZDisplayViewController.h */,
+				83F9E2871DB06FB300FC32CA /* YZDisplayViewController.m */,
+				83F9E2881DB06FB300FC32CA /* YZDisplayViewHeader.h */,
+			);
+			path = YZDisplayViewController;
+			sourceTree = "<group>";
+		};
+		83F9E28C1DB06FDD00FC32CA /* third */ = {
+			isa = PBXGroup;
+			children = (
+				8336D63E1DAF60BE00B22794 /* YYKit */,
+				83F9E2811DB06FB300FC32CA /* YZDisplayViewController */,
+			);
+			name = third;
 			sourceTree = "<group>";
 		};
 		86018EC97614AD1967268A93 /* Frameworks */ = {
@@ -739,6 +796,7 @@
 				83F6C5C31DAC78040064601D /* LaunchScreen.storyboard in Resources */,
 				83F6C5C01DAC78040064601D /* Assets.xcassets in Resources */,
 				83F6C5BE1DAC78040064601D /* Main.storyboard in Resources */,
+				83F9E2941DB078A600FC32CA /* CsMyFileCell.xib in Resources */,
 				8390FE951DAF8A47002180BC /* CSMayVideoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -801,6 +859,7 @@
 				8336D6F01DAF60BE00B22794 /* NSBundle+YYAdd.m in Sources */,
 				83D798061DAF202D008BC675 /* CSNetHelp.swift in Sources */,
 				8390FE8D1DAF8182002180BC /* CSTableViewController.swift in Sources */,
+				83F9E29A1DB0B3E600FC32CA /* CSScrollViewController.swift in Sources */,
 				8390FE911DAF8758002180BC /* CSModel.swift in Sources */,
 				8336D7001DAF60BE00B22794 /* UIBarButtonItem+YYAdd.m in Sources */,
 				8336D7161DAF60BE00B22794 /* YYAnimatedImageView.m in Sources */,
@@ -820,9 +879,13 @@
 				8336D7171DAF60BE00B22794 /* YYFrameImage.m in Sources */,
 				8336D73E1DAF60BE00B22794 /* YYTransaction.m in Sources */,
 				8336D71F1DAF60BE00B22794 /* YYClassInfo.m in Sources */,
+				83F9E28A1DB06FB300FC32CA /* YZDisplayTitleLabel.m in Sources */,
 				8336D6FB1DAF60BE00B22794 /* NSThread+YYAdd.m in Sources */,
+				83F9E28E1DB0713600FC32CA /* CSMyInfoViewController.swift in Sources */,
 				8336D70C1DAF60BE00B22794 /* UIView+YYAdd.m in Sources */,
+				83F9E2891DB06FB300FC32CA /* UIView+Frame.m in Sources */,
 				8336D7081DAF60BE00B22794 /* UIScreen+YYAdd.m in Sources */,
+				83F9E2801DB0695D00FC32CA /* Reusable+CSExtensions.swift in Sources */,
 				8336D70B1DAF60BE00B22794 /* UITextField+YYAdd.m in Sources */,
 				83F6C5BB1DAC78040064601D /* ViewController.swift in Sources */,
 				8336D71D1DAF60BE00B22794 /* YYWebImageOperation.m in Sources */,
@@ -830,6 +893,7 @@
 				8336D6F11DAF60BE00B22794 /* NSData+YYAdd.m in Sources */,
 				8336D72C1DAF60BE00B22794 /* YYTextArchiver.m in Sources */,
 				8336D7011DAF60BE00B22794 /* UIBezierPath+YYAdd.m in Sources */,
+				83F9E2981DB08DE600FC32CA /* CSMyPhotoColCell.swift in Sources */,
 				8336D7151DAF60BE00B22794 /* UIImageView+YYWebImage.m in Sources */,
 				8336D70E1DAF60BE00B22794 /* YYDiskCache.m in Sources */,
 				8336D7131DAF60BE00B22794 /* MKAnnotationView+YYWebImage.m in Sources */,
@@ -845,8 +909,11 @@
 				8336D6FA1DAF60BE00B22794 /* NSString+YYAdd.m in Sources */,
 				8336D7371DAF60BE00B22794 /* YYGestureRecognizer.m in Sources */,
 				8336D72E1DAF60BE00B22794 /* YYTextParser.m in Sources */,
+				83F9E2961DB08B2900FC32CA /* CSMyPhotoLIstViewController.swift in Sources */,
 				8336D6F31DAF60BE00B22794 /* NSDictionary+YYAdd.m in Sources */,
 				8336D7201DAF60BE00B22794 /* YYTextContainerView.m in Sources */,
+				83F9E2931DB078A600FC32CA /* CsMyFileCell.swift in Sources */,
+				83F9E28B1DB06FB300FC32CA /* YZDisplayViewController.m in Sources */,
 				8336D72D1DAF60BE00B22794 /* YYTextAttribute.m in Sources */,
 				8336D70F1DAF60BE00B22794 /* YYKVStorage.m in Sources */,
 				8336D7211DAF60BE00B22794 /* YYTextDebugOption.m in Sources */,
@@ -865,6 +932,7 @@
 				8336D6EF1DAF60BE00B22794 /* NSArray+YYAdd.m in Sources */,
 				8336D6F71DAF60BE00B22794 /* NSObject+YYAdd.m in Sources */,
 				8336D7291DAF60BE00B22794 /* NSAttributedString+YYText.m in Sources */,
+				83F9E2901DB0767F00FC32CA /* CSMyFileListViewController.swift in Sources */,
 				8336D7361DAF60BE00B22794 /* YYFileHash.m in Sources */,
 				8336D6FE1DAF60BE00B22794 /* YYCGUtilities.m in Sources */,
 				8336D6F61DAF60BE00B22794 /* NSNumber+YYAdd.m in Sources */,
