@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		08C5156DC13C217E378A5DCF /* Pods_CodeShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97A355E385A986EE00685E1 /* Pods_CodeShare.framework */; };
+		83103F181DB464E10037351E /* CSMainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83103F171DB464E10037351E /* CSMainPageViewController.swift */; };
+		83103F1A1DB465040037351E /* CSMainPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83103F191DB465040037351E /* CSMainPhotoViewController.swift */; };
+		83103F1E1DB465260037351E /* CSMainFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83103F1D1DB465260037351E /* CSMainFileViewController.swift */; };
+		83103F201DB465440037351E /* CSMainPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83103F1F1DB465440037351E /* CSMainPhotoCell.swift */; };
+		83103F271DB4B5DC0037351E /* videoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 83103F261DB4B5DC0037351E /* videoData.json */; };
+		8324472D1DB4CF2600726693 /* CSMainVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8324472C1DB4CF2600726693 /* CSMainVideoViewController.swift */; };
+		832447321DB4D64400726693 /* CSMainVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832447301DB4D64400726693 /* CSMainVideoCell.swift */; };
+		832447331DB4D64400726693 /* CSMainVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832447311DB4D64400726693 /* CSMainVideoCell.xib */; };
 		8336D6EF1DAF60BE00B22794 /* NSArray+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8336D6421DAF60BE00B22794 /* NSArray+YYAdd.m */; };
 		8336D6F01DAF60BE00B22794 /* NSBundle+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8336D6441DAF60BE00B22794 /* NSBundle+YYAdd.m */; };
 		8336D6F11DAF60BE00B22794 /* NSData+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8336D6461DAF60BE00B22794 /* NSData+YYAdd.m */; };
@@ -98,6 +106,12 @@
 		8390FE951DAF8A47002180BC /* CSMayVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8390FE931DAF8A47002180BC /* CSMayVideoCell.xib */; };
 		83D798061DAF202D008BC675 /* CSNetHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D798051DAF202D008BC675 /* CSNetHelp.swift */; };
 		83D798081DAF3BE6008BC675 /* CSUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D798071DAF3BE6008BC675 /* CSUserModel.swift */; };
+		83EF16701DB5B25A00957947 /* CSMySettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF166F1DB5B25A00957947 /* CSMySettingViewController.swift */; };
+		83EF16721DB5BA8600957947 /* CSMyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF16711DB5BA8600957947 /* CSMyDetailViewController.swift */; };
+		83EF16741DB601AD00957947 /* CSScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF16731DB601AD00957947 /* CSScanViewController.swift */; };
+		83EF16761DB6033A00957947 /* CSMyQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF16751DB6033A00957947 /* CSMyQRCodeViewController.swift */; };
+		83EF16791DB611D500957947 /* CSShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF16781DB611D500957947 /* CSShareViewController.swift */; };
+		83EF167B1DB6187600957947 /* CSSharePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF167A1DB6187600957947 /* CSSharePhotoViewController.swift */; };
 		83F6C5B91DAC78040064601D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6C5B81DAC78040064601D /* AppDelegate.swift */; };
 		83F6C5BB1DAC78040064601D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6C5BA1DAC78040064601D /* ViewController.swift */; };
 		83F6C5BE1DAC78040064601D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F6C5BC1DAC78040064601D /* Main.storyboard */; };
@@ -122,6 +136,14 @@
 
 /* Begin PBXFileReference section */
 		61109A8C26B0670C53CA5816 /* Pods-CodeShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeShare/Pods-CodeShare.release.xcconfig"; sourceTree = "<group>"; };
+		83103F171DB464E10037351E /* CSMainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMainPageViewController.swift; sourceTree = "<group>"; };
+		83103F191DB465040037351E /* CSMainPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMainPhotoViewController.swift; sourceTree = "<group>"; };
+		83103F1D1DB465260037351E /* CSMainFileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMainFileViewController.swift; sourceTree = "<group>"; };
+		83103F1F1DB465440037351E /* CSMainPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMainPhotoCell.swift; sourceTree = "<group>"; };
+		83103F261DB4B5DC0037351E /* videoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videoData.json; sourceTree = "<group>"; };
+		8324472C1DB4CF2600726693 /* CSMainVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMainVideoViewController.swift; sourceTree = "<group>"; };
+		832447301DB4D64400726693 /* CSMainVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMainVideoCell.swift; sourceTree = "<group>"; };
+		832447311DB4D64400726693 /* CSMainVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSMainVideoCell.xib; sourceTree = "<group>"; };
 		8336D6411DAF60BE00B22794 /* NSArray+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YYAdd.h"; sourceTree = "<group>"; };
 		8336D6421DAF60BE00B22794 /* NSArray+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YYAdd.m"; sourceTree = "<group>"; };
 		8336D6431DAF60BE00B22794 /* NSBundle+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YYAdd.h"; sourceTree = "<group>"; };
@@ -295,6 +317,12 @@
 		8390FE931DAF8A47002180BC /* CSMayVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSMayVideoCell.xib; sourceTree = "<group>"; };
 		83D798051DAF202D008BC675 /* CSNetHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSNetHelp.swift; sourceTree = "<group>"; };
 		83D798071DAF3BE6008BC675 /* CSUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSUserModel.swift; sourceTree = "<group>"; };
+		83EF166F1DB5B25A00957947 /* CSMySettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMySettingViewController.swift; sourceTree = "<group>"; };
+		83EF16711DB5BA8600957947 /* CSMyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMyDetailViewController.swift; sourceTree = "<group>"; };
+		83EF16731DB601AD00957947 /* CSScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSScanViewController.swift; sourceTree = "<group>"; };
+		83EF16751DB6033A00957947 /* CSMyQRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMyQRCodeViewController.swift; sourceTree = "<group>"; };
+		83EF16781DB611D500957947 /* CSShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSShareViewController.swift; sourceTree = "<group>"; };
+		83EF167A1DB6187600957947 /* CSSharePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSSharePhotoViewController.swift; sourceTree = "<group>"; };
 		83F6C5B51DAC78040064601D /* CodeShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F6C5B81DAC78040064601D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83F6C5BA1DAC78040064601D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -346,6 +374,30 @@
 				61109A8C26B0670C53CA5816 /* Pods-CodeShare.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		83103F161DB464A90037351E /* CSMainPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				83103F191DB465040037351E /* CSMainPhotoViewController.swift */,
+				8324472C1DB4CF2600726693 /* CSMainVideoViewController.swift */,
+				83103F1D1DB465260037351E /* CSMainFileViewController.swift */,
+			);
+			name = CSMainPageViewController;
+			sourceTree = "<group>";
+		};
+		83103F211DB46F3F0037351E /* CSMyInfoChildViewContrller */ = {
+			isa = PBXGroup;
+			children = (
+				8390FE8E1DAF8665002180BC /* CSMyViodeListViewController.swift */,
+				83F9E2951DB08B2900FC32CA /* CSMyPhotoLIstViewController.swift */,
+				83F9E28F1DB0767F00FC32CA /* CSMyFileListViewController.swift */,
+				83EF166F1DB5B25A00957947 /* CSMySettingViewController.swift */,
+				83EF16711DB5BA8600957947 /* CSMyDetailViewController.swift */,
+				83EF16731DB601AD00957947 /* CSScanViewController.swift */,
+				83EF16751DB6033A00957947 /* CSMyQRCodeViewController.swift */,
+			);
+			name = CSMyInfoChildViewContrller;
 			sourceTree = "<group>";
 		};
 		8336D63E1DAF60BE00B22794 /* YYKit */ = {
@@ -625,6 +677,14 @@
 			path = help;
 			sourceTree = "<group>";
 		};
+		83EF16771DB6116900957947 /* CSShareViewController */ = {
+			isa = PBXGroup;
+			children = (
+				83EF167A1DB6187600957947 /* CSSharePhotoViewController.swift */,
+			);
+			name = CSShareViewController;
+			sourceTree = "<group>";
+		};
 		83F6C5AC1DAC78040064601D = {
 			isa = PBXGroup;
 			children = (
@@ -672,9 +732,11 @@
 				8390FE8C1DAF8182002180BC /* CSTableViewController.swift */,
 				83F9E2991DB0B3E600FC32CA /* CSScrollViewController.swift */,
 				83F9E28D1DB0713600FC32CA /* CSMyInfoViewController.swift */,
-				8390FE8E1DAF8665002180BC /* CSMyViodeListViewController.swift */,
-				83F9E28F1DB0767F00FC32CA /* CSMyFileListViewController.swift */,
-				83F9E2951DB08B2900FC32CA /* CSMyPhotoLIstViewController.swift */,
+				83103F211DB46F3F0037351E /* CSMyInfoChildViewContrller */,
+				83103F171DB464E10037351E /* CSMainPageViewController.swift */,
+				83103F161DB464A90037351E /* CSMainPageViewController */,
+				83EF16781DB611D500957947 /* CSShareViewController.swift */,
+				83EF16771DB6116900957947 /* CSShareViewController */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -682,6 +744,7 @@
 		83F6C5CB1DAC79460064601D /* model */ = {
 			isa = PBXGroup;
 			children = (
+				83103F261DB4B5DC0037351E /* videoData.json */,
 				83D798071DAF3BE6008BC675 /* CSUserModel.swift */,
 				8390FE901DAF8758002180BC /* CSModel.swift */,
 			);
@@ -696,6 +759,9 @@
 				83F9E2911DB078A600FC32CA /* CsMyFileCell.swift */,
 				83F9E2921DB078A600FC32CA /* CsMyFileCell.xib */,
 				83F9E2971DB08DE600FC32CA /* CSMyPhotoColCell.swift */,
+				83103F1F1DB465440037351E /* CSMainPhotoCell.swift */,
+				832447301DB4D64400726693 /* CSMainVideoCell.swift */,
+				832447311DB4D64400726693 /* CSMainVideoCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -797,6 +863,8 @@
 				83F6C5C01DAC78040064601D /* Assets.xcassets in Resources */,
 				83F6C5BE1DAC78040064601D /* Main.storyboard in Resources */,
 				83F9E2941DB078A600FC32CA /* CsMyFileCell.xib in Resources */,
+				83103F271DB4B5DC0037351E /* videoData.json in Resources */,
+				832447331DB4D64400726693 /* CSMainVideoCell.xib in Resources */,
 				8390FE951DAF8A47002180BC /* CSMayVideoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -907,15 +975,18 @@
 				8336D7271DAF60BE00B22794 /* YYTextMagnifier.m in Sources */,
 				8336D72A1DAF60BE00B22794 /* NSParagraphStyle+YYText.m in Sources */,
 				8336D6FA1DAF60BE00B22794 /* NSString+YYAdd.m in Sources */,
+				83EF16701DB5B25A00957947 /* CSMySettingViewController.swift in Sources */,
 				8336D7371DAF60BE00B22794 /* YYGestureRecognizer.m in Sources */,
 				8336D72E1DAF60BE00B22794 /* YYTextParser.m in Sources */,
 				83F9E2961DB08B2900FC32CA /* CSMyPhotoLIstViewController.swift in Sources */,
 				8336D6F31DAF60BE00B22794 /* NSDictionary+YYAdd.m in Sources */,
 				8336D7201DAF60BE00B22794 /* YYTextContainerView.m in Sources */,
+				83103F201DB465440037351E /* CSMainPhotoCell.swift in Sources */,
 				83F9E2931DB078A600FC32CA /* CsMyFileCell.swift in Sources */,
 				83F9E28B1DB06FB300FC32CA /* YZDisplayViewController.m in Sources */,
 				8336D72D1DAF60BE00B22794 /* YYTextAttribute.m in Sources */,
 				8336D70F1DAF60BE00B22794 /* YYKVStorage.m in Sources */,
+				83EF16791DB611D500957947 /* CSShareViewController.swift in Sources */,
 				8336D7211DAF60BE00B22794 /* YYTextDebugOption.m in Sources */,
 				8336D71C1DAF60BE00B22794 /* YYWebImageManager.m in Sources */,
 				8336D7221DAF60BE00B22794 /* YYTextEffectWindow.m in Sources */,
@@ -924,15 +995,20 @@
 				8336D7041DAF60BE00B22794 /* UIDevice+YYAdd.m in Sources */,
 				8336D7071DAF60BE00B22794 /* UIImage+YYAdd.m in Sources */,
 				8336D6F21DAF60BE00B22794 /* NSDate+YYAdd.m in Sources */,
+				83EF16741DB601AD00957947 /* CSScanViewController.swift in Sources */,
 				8336D6FF1DAF60BE00B22794 /* UIApplication+YYAdd.m in Sources */,
 				8336D6F91DAF60BE00B22794 /* NSObject+YYAddForKVO.m in Sources */,
+				83103F1E1DB465260037351E /* CSMainFileViewController.swift in Sources */,
 				8336D7251DAF60BE00B22794 /* YYTextLayout.m in Sources */,
 				8336D7191DAF60BE00B22794 /* YYImageCache.m in Sources */,
 				8336D6FD1DAF60BE00B22794 /* CALayer+YYAdd.m in Sources */,
 				8336D6EF1DAF60BE00B22794 /* NSArray+YYAdd.m in Sources */,
 				8336D6F71DAF60BE00B22794 /* NSObject+YYAdd.m in Sources */,
 				8336D7291DAF60BE00B22794 /* NSAttributedString+YYText.m in Sources */,
+				83103F1A1DB465040037351E /* CSMainPhotoViewController.swift in Sources */,
 				83F9E2901DB0767F00FC32CA /* CSMyFileListViewController.swift in Sources */,
+				832447321DB4D64400726693 /* CSMainVideoCell.swift in Sources */,
+				8324472D1DB4CF2600726693 /* CSMainVideoViewController.swift in Sources */,
 				8336D7361DAF60BE00B22794 /* YYFileHash.m in Sources */,
 				8336D6FE1DAF60BE00B22794 /* YYCGUtilities.m in Sources */,
 				8336D6F61DAF60BE00B22794 /* NSNumber+YYAdd.m in Sources */,
@@ -946,6 +1022,7 @@
 				8336D7111DAF60BE00B22794 /* _YYWebImageSetter.m in Sources */,
 				8336D73F1DAF60BE00B22794 /* YYWeakProxy.m in Sources */,
 				83F6C5CE1DAC79C50064601D /* CSTabBarController.swift in Sources */,
+				83EF167B1DB6187600957947 /* CSSharePhotoViewController.swift in Sources */,
 				8336D73D1DAF60BE00B22794 /* YYTimer.m in Sources */,
 				8336D7311DAF60BE00B22794 /* YYTextUtilities.m in Sources */,
 				8336D7051DAF60BE00B22794 /* UIFont+YYAdd.m in Sources */,
@@ -953,6 +1030,8 @@
 				8336D71E1DAF60BE00B22794 /* NSObject+YYModel.m in Sources */,
 				8336D7301DAF60BE00B22794 /* YYTextRunDelegate.m in Sources */,
 				83F6C5D21DACBECE0064601D /* CSRegisterViewController.swift in Sources */,
+				83EF16761DB6033A00957947 /* CSMyQRCodeViewController.swift in Sources */,
+				83EF16721DB5BA8600957947 /* CSMyDetailViewController.swift in Sources */,
 				8390FE941DAF8A47002180BC /* CSMayVideoCell.swift in Sources */,
 				8336D73A1DAF60BE00B22794 /* YYSentinel.m in Sources */,
 				83F78A511DADD0F8004963D6 /* CodeShareInit.swift in Sources */,
@@ -960,6 +1039,7 @@
 				8336D7121DAF60BE00B22794 /* CALayer+YYWebImage.m in Sources */,
 				8336D73B1DAF60BE00B22794 /* YYThreadSafeArray.m in Sources */,
 				83F6C5B91DAC78040064601D /* AppDelegate.swift in Sources */,
+				83103F181DB464E10037351E /* CSMainPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

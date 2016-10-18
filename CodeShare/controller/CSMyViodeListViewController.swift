@@ -22,16 +22,13 @@ class CSMyViodeListViewController: CSTableViewController {
     }
     var cellModels: [AnyObject] = []
     //
-    var index = 100
+    //var index = 100
     override func viewDidLoad() {
         super.viewDidLoad()
+        //注册 cell
         self.tableView.registerNib(UINib.init(nibName: String(CSMayVideoCell), bundle: nil), forCellReuseIdentifier: String(CSMayVideoCell))
         // Do any additional setup after loading the view.
         
-        tableView.snp_makeConstraints { (make) in
-            
-            //make.edges.equalTo(0) //边
-        }
         //配置数据
         getData()
     }
@@ -89,7 +86,7 @@ class CSMyViodeListViewController: CSTableViewController {
                     "viodeoUrl":"http://www.baidu.com"
                 ],
             ]
-        // OC JSON转化为模型数组
+        // OC JSON转化为模型数组 
         cellModels = NSArray.modelArrayWithClass(CSMyVideoModel.self, json: cellInfos)!
         
         self.tableView.reloadData()

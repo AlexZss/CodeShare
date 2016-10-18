@@ -22,4 +22,22 @@ target 'CodeShare' do
    pod "FDFullscreenPopGesture"
    #YYKit
    #pod "YYKit", "~> 0.0"
+   
+   #简单的图文混排 设置文字属性 设置 label 某些文字的点击事件
+   pod "WPAttributedMarkup"
+   
+    # 无限循环广告条，用 collection 实现
+   pod "SDCycleScrollView"
+   
+   # 大图浏览
+   pod "IDMPhotoBrowser"
+   
+   #视频播放
+   pod "ZFPlayer"
+   
+   #二维码
+   pod "swiftScan"
+   
+   #多选相册图片、视频
+   pod "UzysAssetsPickerController"
 end

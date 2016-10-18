@@ -36,7 +36,7 @@ class CSScrollViewController: ViewController {
             
             //更新 contentView 的高度约束
             contenView.snp_updateConstraints { (make) in
-                //内容的高度等于view减去两边的导航再减1
+                //内容的高度等于view减去两边的导航再减1 更新的新高度
                 make.height.greaterThanOrEqualTo(view).offset(1-contentInset.top-contentInset.bottom)
             }
         }
@@ -52,7 +52,7 @@ class CSScrollViewController: ViewController {
         contenView.snp_makeConstraints { (make) in
             make.edges.equalTo(0)
             make.width.equalTo(scrollerView)
-            //scrollView的高度比 view 高1
+            //scrollView的高度比 view 高1  初始创建的高度
             make.height.greaterThanOrEqualTo(view).offset(1)
         }
         scrollerView.snp_makeConstraints { (make) in

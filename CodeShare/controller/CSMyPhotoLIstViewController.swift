@@ -35,8 +35,9 @@ class CSMyPhotoLIstViewController: ViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        //试图指定的类(自定义的泛型)
-        collectionView.registerClassOf(CSMyPhotoColCell)
+        //试图指定的类(自定义的泛型) xib的collection
+        self.collectionView.registerClassOf(CSMyPhotoColCell)
+        
         
         //self.view.backgroundColor = UIColor.whiteColor()
         collectionView.backgroundColor = UIColor.whiteColor()

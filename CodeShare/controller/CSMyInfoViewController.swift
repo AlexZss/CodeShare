@@ -12,6 +12,7 @@ import UIKit
 class CSMyInfoViewController: CSScrollViewController {
 
     var dispalyController = YZDisplayViewController.init()
+    let headImage = UIImageView.init(image: UIImage.init(named: "头像"))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,7 @@ class CSMyInfoViewController: CSScrollViewController {
             make.height.equalTo(178)
         }
         
-        let headImage = UIImageView.init(image: UIImage.init(named: "头像"))
+        //let headImage = UIImageView.init(image: UIImage.init(named: "头像"))
         backImage.addSubview(headImage)
         headImage.snp_makeConstraints { (make) in
             make.left.top.equalTo(16)
@@ -69,9 +70,16 @@ class CSMyInfoViewController: CSScrollViewController {
         setButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         setButton.titleLabel?.font = UIFont.systemFontOfSize(15)
         backImage.addSubview(setButton)
+        backImage.userInteractionEnabled = true
         setButton.snp_makeConstraints { (make) in
             make.right.equalTo(-16)
             make.centerY.equalTo(0)
+        }
+        setButton.jk_handleControlEvents(.TouchUpInside) { (sender) in
+            let settingCtrl = CSMySettingViewController()
+            settingCtrl.title = "我的设置"
+            settingCtrl.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(settingCtrl, animated: true)
         }
         
         let buttonArray = ["12\n我的分享","2\n我的下载","9\n我的好友"]
@@ -117,6 +125,13 @@ class CSMyInfoViewController: CSScrollViewController {
             engG.memory = 0.75
             endB.memory = 0.75
         }
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        headImage.setImageWithURL(NSURL.init(string: CSUserModel.SharedUser.avatar))
+        
     }
     
     func configureViewCOntrollers() {

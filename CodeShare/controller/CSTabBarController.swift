@@ -24,7 +24,7 @@ class CSTabBarController: UITabBarController {
             [
                 "title": "主页",
                 "image": "按钮主页",
-                "class": "CodeShare.ViewController",
+                "class": "CodeShare.CSMainPageViewController",
             ],
             [
                 "title": "消息",
@@ -34,7 +34,7 @@ class CSTabBarController: UITabBarController {
             [
                 "title": "分享",
                 "image": "按钮分享",
-                "class": "CodeShare.CSScrollViewController",
+                "class": "CodeShare.CSShareViewController",
             ],
             [
                 "title": "我的",

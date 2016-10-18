@@ -12,11 +12,12 @@ class CSMyPhotoColCell: UICollectionViewCell {
     
     //collection反选的效果，自己封装
     var mask = UIView.init()
+    let imageView = UIImageView.init(image: UIImage.init(named: "图片"))
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        let imageView = UIImageView.init(image: UIImage.init(named: "图片"))
+        
         self.contentView.addSubview(imageView)
         imageView.snp_makeConstraints { (make) in
             make.edges.equalTo(0)

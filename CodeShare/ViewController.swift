@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 
     func congfigureBackItem(){
         // push的控制器 返回的是 pop 否则dismiss
-        if  (self.navigationController?.presentingViewController != nil && self.navigationController?.viewControllers.first != nil) || self.navigationController?.viewControllers.first != self {
+        if  (self.navigationController?.presentingViewController != nil && self.navigationController?.viewControllers.first != self) || self.navigationController?.presentingViewController != nil {
                 let  backButton = UIButton.init(type: .Custom)
                 backButton.setImage(UIImage(named: "返回按钮"), forState: .Normal)
                 backButton.jk_handleControlEvents(.TouchUpInside, withBlock: { (sender) in
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         }
         
         //只有在不是present出的导航控制器的第二个控制器，需要添加这个属性
-        if self.navigationController?.presentationController == nil && self.navigationController?.viewControllers.count >= 2 && self.navigationController?.viewControllers[2] == self {
+        if self.navigationController?.presentationController == nil && self.navigationController?.viewControllers.count >= 2 && self.navigationController?.viewControllers[1] == self {
             self.hidesBottomBarWhenPushed = true
         }
         

@@ -9,7 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DACircularProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FDFullscreenPopGesture.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>IDMPhotoBrowser.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -20,6 +30,11 @@
 			<false/>
 		</dict>
 		<key>JKCategories.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -39,7 +54,42 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDCycleScrollView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UzysAssetsPickerController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>WPAttributedMarkup.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ZFPlayer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>swiftScan.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,12 +97,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>035BE02F3267F836892C8EB032D6AED9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2D8D1B98761165C4A718F096B8160A10</key>
+		<key>1861532A38E97B63A59D935C36173C2D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +107,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>5047A29DAE434DEBE8871F85AA0AE253</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5855D213D188EE14086C1F827DE7B1FF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>689374147C585EC538A3603E036FE023</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,17 +127,62 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>94624EC6C9739263AA965CFE2D8933F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A151C4B3A81D58C9AE311B84E35CA443</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A2F922BE828C93A517FBCD7125731FD3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A9A83F63385AA43314397B8DD375464B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5D63BF93B55143EE07F1532533DF60E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF9463378CD3B1C8DAE00C627E9E389B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E07E90A6CB4E072149B835EF132BEBAC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EAD3080289561AFAD7ED9F50989CC099</key>
+		<key>E38394CCF1AEC89B4767A3505977B75C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FA0752BA00E2F3E2354A75A3EDCC5110</key>
+		<key>E555727E428A73794A019D5A4E5EC6B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F0D1E267403C3D0202B59ABFC4207E58</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5766291EE1D711CA0BA9C3DF173BCDE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF4793093BF21380B4CC21CB9093D2AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
