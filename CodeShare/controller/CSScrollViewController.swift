@@ -20,7 +20,7 @@ class CSScrollViewController: ViewController {
         return scrollView
     }()
     
-    private(set) lazy var contenView: UIView = { // 公共的，子类都会需要实现，直接写在父类
+    private(set) lazy var contenView: UIView = {
        let contenView = UIView.init()
         contenView.backgroundColor = UIColor.randomColor()
         
@@ -28,8 +28,7 @@ class CSScrollViewController: ViewController {
     }()
     
     
-    var contentInset = UIEdgeInsetsMake(64, 0, 0, 0) { //公共的，子类都会需要实现，直接写在父类
-        didSet{
+    var contentInset = UIEdgeInsetsMake(64, 0, 0, 0) {         didSet{
             scrollerView.contentInset = contentInset
             scrollerView.scrollIndicatorInsets = contentInset
             scrollerView.contentOffset = CGPointMake(0, -contentInset.top)

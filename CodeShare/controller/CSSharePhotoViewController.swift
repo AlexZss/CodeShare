@@ -106,6 +106,7 @@ extension CSSharePhotoViewController: UICollectionViewDelegate, UICollectionView
            
             
             //设置图片数组
+            //展示所要分享的图片
             var photoGroup: [IDMPhoto] = []
             for image in self.cellModel {
                 if image == self.cellModel.last! {
@@ -127,7 +128,7 @@ extension CSSharePhotoViewController: UzysAssetsPickerControllerDelegate {
     func uzysAssetsPickerControllerDidCancel(picker: UzysAssetsPickerController!) {
         
     }
-    //成功选中图片
+    //成功选中图片   记下来就行了
     func uzysAssetsPickerController(picker: UzysAssetsPickerController!, didFinishPickingAssets assets: [AnyObject]!) {
         print(assets)
         for asset in assets {

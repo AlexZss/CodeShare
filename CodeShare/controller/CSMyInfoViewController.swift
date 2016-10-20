@@ -129,7 +129,7 @@ class CSMyInfoViewController: CSScrollViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
+        //获取上传的头像
         headImage.setImageWithURL(NSURL.init(string: CSUserModel.SharedUser.avatar))
         
     }

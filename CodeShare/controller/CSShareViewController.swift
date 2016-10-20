@@ -50,6 +50,7 @@ class CSShareViewController: CSScrollViewController {
             make.width.height.equalTo(topButton)
         }
         
+        
         let bottomButton = UIButton.init(type: .Custom)
         bottomButton.setImage(UIImage.init(named: "按钮-压缩包"), forState: .Normal)
         self.contenView.addSubview(bottomButton)
@@ -71,6 +72,19 @@ class CSShareViewController: CSScrollViewController {
             
             self.navigationController?.pushViewController(sharePhotoCtrl, animated: true)
         }
+        
+        //跳转到Runtime
+        bottomButton.jk_handleControlEvents(.TouchUpInside) { (sender) in
+            
+            let runtimeCtrl = CSRuntimeViewController()
+            runtimeCtrl.title = "运行时"
+            runtimeCtrl.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(runtimeCtrl, animated: true)
+        }
+        //扩展的拖动
+        centerButton.dragable = true
+        self.view.dragable = true
+        UIApplication.sharedApplication().keyWindow?.dragable = true
     }
 
     override func didReceiveMemoryWarning() {

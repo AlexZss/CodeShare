@@ -104,6 +104,16 @@
 		8390FE911DAF8758002180BC /* CSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8390FE901DAF8758002180BC /* CSModel.swift */; };
 		8390FE941DAF8A47002180BC /* CSMayVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8390FE921DAF8A47002180BC /* CSMayVideoCell.swift */; };
 		8390FE951DAF8A47002180BC /* CSMayVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8390FE931DAF8A47002180BC /* CSMayVideoCell.xib */; };
+		83D458E61DB6FF7700BBE93F /* CSCoreGraphicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D458E51DB6FF7700BBE93F /* CSCoreGraphicsViewController.swift */; };
+		83D458E81DB701B900BBE93F /* CSTrangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D458E71DB701B900BBE93F /* CSTrangleView.swift */; };
+		83D458EA1DB712CB00BBE93F /* CSDrawableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D458E91DB712CB00BBE93F /* CSDrawableView.swift */; };
+		83D458EC1DB720F400BBE93F /* CSLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D458EB1DB720F400BBE93F /* CSLayerViewController.swift */; };
+		83D458EE1DB721F200BBE93F /* CSCircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D458ED1DB721F200BBE93F /* CSCircleProgress.swift */; };
+		83D458F01DB75E4700BBE93F /* CSClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D458EF1DB75E4700BBE93F /* CSClockView.swift */; };
+		83D4592B1DB8567000BBE93F /* CSRuntimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4592A1DB8567000BBE93F /* CSRuntimeViewController.swift */; };
+		83D4592E1DB85D5500BBE93F /* NSObject+Walk.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D4592D1DB85D5500BBE93F /* NSObject+Walk.m */; };
+		83D459301DB8970600BBE93F /* CSDragableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4592F1DB8970600BBE93F /* CSDragableView.swift */; };
+		83D459321DB8A86800BBE93F /* CSBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D459311DB8A86800BBE93F /* CSBorderView.swift */; };
 		83D798061DAF202D008BC675 /* CSNetHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D798051DAF202D008BC675 /* CSNetHelp.swift */; };
 		83D798081DAF3BE6008BC675 /* CSUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D798071DAF3BE6008BC675 /* CSUserModel.swift */; };
 		83EF16701DB5B25A00957947 /* CSMySettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF166F1DB5B25A00957947 /* CSMySettingViewController.swift */; };
@@ -315,6 +325,17 @@
 		8390FE901DAF8758002180BC /* CSModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSModel.swift; sourceTree = "<group>"; };
 		8390FE921DAF8A47002180BC /* CSMayVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMayVideoCell.swift; sourceTree = "<group>"; };
 		8390FE931DAF8A47002180BC /* CSMayVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSMayVideoCell.xib; sourceTree = "<group>"; };
+		83D458E51DB6FF7700BBE93F /* CSCoreGraphicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSCoreGraphicsViewController.swift; sourceTree = "<group>"; };
+		83D458E71DB701B900BBE93F /* CSTrangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSTrangleView.swift; sourceTree = "<group>"; };
+		83D458E91DB712CB00BBE93F /* CSDrawableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSDrawableView.swift; sourceTree = "<group>"; };
+		83D458EB1DB720F400BBE93F /* CSLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSLayerViewController.swift; sourceTree = "<group>"; };
+		83D458ED1DB721F200BBE93F /* CSCircleProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSCircleProgress.swift; sourceTree = "<group>"; };
+		83D458EF1DB75E4700BBE93F /* CSClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSClockView.swift; sourceTree = "<group>"; };
+		83D4592A1DB8567000BBE93F /* CSRuntimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSRuntimeViewController.swift; sourceTree = "<group>"; };
+		83D4592C1DB85D5500BBE93F /* NSObject+Walk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Walk.h"; sourceTree = "<group>"; };
+		83D4592D1DB85D5500BBE93F /* NSObject+Walk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Walk.m"; sourceTree = "<group>"; };
+		83D4592F1DB8970600BBE93F /* CSDragableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSDragableView.swift; sourceTree = "<group>"; };
+		83D459311DB8A86800BBE93F /* CSBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSBorderView.swift; sourceTree = "<group>"; };
 		83D798051DAF202D008BC675 /* CSNetHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSNetHelp.swift; sourceTree = "<group>"; };
 		83D798071DAF3BE6008BC675 /* CSUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSUserModel.swift; sourceTree = "<group>"; };
 		83EF166F1DB5B25A00957947 /* CSMySettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMySettingViewController.swift; sourceTree = "<group>"; };
@@ -396,6 +417,8 @@
 				83EF16711DB5BA8600957947 /* CSMyDetailViewController.swift */,
 				83EF16731DB601AD00957947 /* CSScanViewController.swift */,
 				83EF16751DB6033A00957947 /* CSMyQRCodeViewController.swift */,
+				83D458E51DB6FF7700BBE93F /* CSCoreGraphicsViewController.swift */,
+				83D458EB1DB720F400BBE93F /* CSLayerViewController.swift */,
 			);
 			name = CSMyInfoChildViewContrller;
 			sourceTree = "<group>";
@@ -673,6 +696,10 @@
 				83F9E27F1DB0695D00FC32CA /* Reusable+CSExtensions.swift */,
 				83D798051DAF202D008BC675 /* CSNetHelp.swift */,
 				8336D7421DAF674600B22794 /* CSHelp.swift */,
+				83D4592C1DB85D5500BBE93F /* NSObject+Walk.h */,
+				83D4592D1DB85D5500BBE93F /* NSObject+Walk.m */,
+				83D4592F1DB8970600BBE93F /* CSDragableView.swift */,
+				83D459311DB8A86800BBE93F /* CSBorderView.swift */,
 			);
 			path = help;
 			sourceTree = "<group>";
@@ -681,6 +708,7 @@
 			isa = PBXGroup;
 			children = (
 				83EF167A1DB6187600957947 /* CSSharePhotoViewController.swift */,
+				83D4592A1DB8567000BBE93F /* CSRuntimeViewController.swift */,
 			);
 			name = CSShareViewController;
 			sourceTree = "<group>";
@@ -762,6 +790,10 @@
 				83103F1F1DB465440037351E /* CSMainPhotoCell.swift */,
 				832447301DB4D64400726693 /* CSMainVideoCell.swift */,
 				832447311DB4D64400726693 /* CSMainVideoCell.xib */,
+				83D458E71DB701B900BBE93F /* CSTrangleView.swift */,
+				83D458E91DB712CB00BBE93F /* CSDrawableView.swift */,
+				83D458ED1DB721F200BBE93F /* CSCircleProgress.swift */,
+				83D458EF1DB75E4700BBE93F /* CSClockView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -924,8 +956,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D458E81DB701B900BBE93F /* CSTrangleView.swift in Sources */,
 				8336D6F01DAF60BE00B22794 /* NSBundle+YYAdd.m in Sources */,
 				83D798061DAF202D008BC675 /* CSNetHelp.swift in Sources */,
+				83D458EE1DB721F200BBE93F /* CSCircleProgress.swift in Sources */,
 				8390FE8D1DAF8182002180BC /* CSTableViewController.swift in Sources */,
 				83F9E29A1DB0B3E600FC32CA /* CSScrollViewController.swift in Sources */,
 				8390FE911DAF8758002180BC /* CSModel.swift in Sources */,
@@ -939,7 +973,9 @@
 				8336D7391DAF60BE00B22794 /* YYReachability.m in Sources */,
 				8336D70D1DAF60BE00B22794 /* YYCache.m in Sources */,
 				8336D7241DAF60BE00B22794 /* YYTextKeyboardManager.m in Sources */,
+				83D458F01DB75E4700BBE93F /* CSClockView.swift in Sources */,
 				8336D70A1DAF60BE00B22794 /* UITableView+YYAdd.m in Sources */,
+				83D458E61DB6FF7700BBE93F /* CSCoreGraphicsViewController.swift in Sources */,
 				8336D7031DAF60BE00B22794 /* UIControl+YYAdd.m in Sources */,
 				8336D7181DAF60BE00B22794 /* YYImage.m in Sources */,
 				8336D7021DAF60BE00B22794 /* UIColor+YYAdd.m in Sources */,
@@ -947,10 +983,12 @@
 				8336D7171DAF60BE00B22794 /* YYFrameImage.m in Sources */,
 				8336D73E1DAF60BE00B22794 /* YYTransaction.m in Sources */,
 				8336D71F1DAF60BE00B22794 /* YYClassInfo.m in Sources */,
+				83D4592B1DB8567000BBE93F /* CSRuntimeViewController.swift in Sources */,
 				83F9E28A1DB06FB300FC32CA /* YZDisplayTitleLabel.m in Sources */,
 				8336D6FB1DAF60BE00B22794 /* NSThread+YYAdd.m in Sources */,
 				83F9E28E1DB0713600FC32CA /* CSMyInfoViewController.swift in Sources */,
 				8336D70C1DAF60BE00B22794 /* UIView+YYAdd.m in Sources */,
+				83D459321DB8A86800BBE93F /* CSBorderView.swift in Sources */,
 				83F9E2891DB06FB300FC32CA /* UIView+Frame.m in Sources */,
 				8336D7081DAF60BE00B22794 /* UIScreen+YYAdd.m in Sources */,
 				83F9E2801DB0695D00FC32CA /* Reusable+CSExtensions.swift in Sources */,
@@ -979,6 +1017,7 @@
 				8336D7371DAF60BE00B22794 /* YYGestureRecognizer.m in Sources */,
 				8336D72E1DAF60BE00B22794 /* YYTextParser.m in Sources */,
 				83F9E2961DB08B2900FC32CA /* CSMyPhotoLIstViewController.swift in Sources */,
+				83D458EA1DB712CB00BBE93F /* CSDrawableView.swift in Sources */,
 				8336D6F31DAF60BE00B22794 /* NSDictionary+YYAdd.m in Sources */,
 				8336D7201DAF60BE00B22794 /* YYTextContainerView.m in Sources */,
 				83103F201DB465440037351E /* CSMainPhotoCell.swift in Sources */,
@@ -1017,6 +1056,7 @@
 				8336D72B1DAF60BE00B22794 /* UIPasteboard+YYText.m in Sources */,
 				8336D7091DAF60BE00B22794 /* UIScrollView+YYAdd.m in Sources */,
 				8336D7431DAF674600B22794 /* CSHelp.swift in Sources */,
+				83D459301DB8970600BBE93F /* CSDragableView.swift in Sources */,
 				8390FE8F1DAF8665002180BC /* CSMyViodeListViewController.swift in Sources */,
 				8336D7141DAF60BE00B22794 /* UIButton+YYWebImage.m in Sources */,
 				8336D7111DAF60BE00B22794 /* _YYWebImageSetter.m in Sources */,
@@ -1026,6 +1066,7 @@
 				8336D73D1DAF60BE00B22794 /* YYTimer.m in Sources */,
 				8336D7311DAF60BE00B22794 /* YYTextUtilities.m in Sources */,
 				8336D7051DAF60BE00B22794 /* UIFont+YYAdd.m in Sources */,
+				83D4592E1DB85D5500BBE93F /* NSObject+Walk.m in Sources */,
 				8336D72F1DAF60BE00B22794 /* YYTextRubyAnnotation.m in Sources */,
 				8336D71E1DAF60BE00B22794 /* NSObject+YYModel.m in Sources */,
 				8336D7301DAF60BE00B22794 /* YYTextRunDelegate.m in Sources */,
@@ -1033,6 +1074,7 @@
 				83EF16761DB6033A00957947 /* CSMyQRCodeViewController.swift in Sources */,
 				83EF16721DB5BA8600957947 /* CSMyDetailViewController.swift in Sources */,
 				8390FE941DAF8A47002180BC /* CSMayVideoCell.swift in Sources */,
+				83D458EC1DB720F400BBE93F /* CSLayerViewController.swift in Sources */,
 				8336D73A1DAF60BE00B22794 /* YYSentinel.m in Sources */,
 				83F78A511DADD0F8004963D6 /* CodeShareInit.swift in Sources */,
 				8336D7331DAF60BE00B22794 /* YYTextView.m in Sources */,

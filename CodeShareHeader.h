@@ -14,4 +14,6 @@
 //第三方界面滑动的库
 #import "YZDisplayViewHeader.h"
 
+#import "NSObject+Walk.h"
+
 #endif /* CodeShareHeader_h */

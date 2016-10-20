@@ -17,6 +17,14 @@ class CSMySettingViewController: CSTableViewController {
                 "title": "个人信息",
                 "type": "0",
             ],
+            [
+                "title": "Core Graphics", // 核心绘图
+                "type": "0",
+            ],
+            [
+                "title": "Layer Path",    //
+                "type": "0",
+            ],
         ],
         
         [
@@ -121,11 +129,26 @@ extension CSMySettingViewController {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         if indexPath.section == 0 && indexPath.row == 0 {
+            
             let detailCtrl = CSMyDetailViewController()
             detailCtrl.title = "信息详情"
             detailCtrl.contentInset = contentInset
             
             self.navigationController?.pushViewController(detailCtrl, animated: true)
+        }else if indexPath.section == 0 && indexPath.row == 1 {
+            
+            let coreGraphicsCtrl = CSCoreGraphicsViewController()
+            coreGraphicsCtrl.title = "核心绘图"
+            coreGraphicsCtrl.contentInset = contentInset
+            
+            self.navigationController?.pushViewController(coreGraphicsCtrl, animated: true)
+        }else if indexPath.section == 0 && indexPath.row == 2 {
+            
+            let layerCtrl = CSLayerViewController()
+            layerCtrl.title = "Layer"
+            layerCtrl.contentInset = contentInset
+            
+            self.navigationController?.pushViewController(layerCtrl, animated: true)
         }
     }
 }
