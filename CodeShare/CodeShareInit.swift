@@ -11,7 +11,7 @@
 import Foundation
 
 //网络请求的基地址
-#if true
+#if false
 let QFAppBaseURl = "http://10.12.155.20/PhalApi/Public/Codeshare/"
 #else
 let QFAppBaseURl = "http://www.1000phone.tk/"

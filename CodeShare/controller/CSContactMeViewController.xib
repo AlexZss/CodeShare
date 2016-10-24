@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSContactMeViewController" customModule="CodeShare" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0q5-2s-nAv">
+                    <rect key="frame" x="260" y="164" width="91" height="53"/>
+                    <color key="backgroundColor" red="0.59353484608475249" green="1" blue="0.51175441066398708" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="打电话2"/>
+                    <connections>
+                        <action selector="cellTwo:" destination="-1" eventType="touchUpInside" id="aAP-LY-pXD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCF-LE-nfx">
+                    <rect key="frame" x="260" y="252" width="91" height="53"/>
+                    <color key="backgroundColor" red="0.63489003342504069" green="1" blue="0.61460943669269996" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="打电话3"/>
+                    <connections>
+                        <action selector="callThree:" destination="-1" eventType="touchUpInside" id="15q-rd-lOU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqo-ZO-XaF">
+                    <rect key="frame" x="260" y="338" width="91" height="55"/>
+                    <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="短信1"/>
+                    <connections>
+                        <action selector="smsOne:" destination="-1" eventType="touchUpInside" id="GmR-8l-1hZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLE-JN-My4">
+                    <rect key="frame" x="260" y="427" width="91" height="57"/>
+                    <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="短信2"/>
+                    <connections>
+                        <action selector="smsTwo:" destination="-1" eventType="touchUpInside" id="aqx-kq-H9E"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHg-ze-9f8">
+                    <rect key="frame" x="260" y="79" width="91" height="52"/>
+                    <color key="backgroundColor" red="0.44633827736445708" green="1" blue="0.42939055259708525" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="打电话1"/>
+                    <connections>
+                        <action selector="cellOne:" destination="-1" eventType="touchUpInside" id="yLg-F2-2TP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+    </objects>
+</document>

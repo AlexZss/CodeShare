@@ -24,7 +24,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //设置 MobSMSSDK
         setupMob()
         
+        // 用代码设置3D Touch 快捷键
+        setupShortCutItem()
+        
         return true
+    }
+    
+    func setupShortCutItem() {
+        
+       // UIApplication.sharedApplication().shortcutItems
+        
+        //type 可以用这个参数去区分某个快捷键
+        //localizedTitle 大标题
+        //localizedSubtitle 小标题，副标题
+        //
+        //userInfo 附加信息
+        
+        let scanIcon = UIApplicationShortcutIcon.init(type: UIApplicationShortcutIconType.CapturePhoto)
+        let scanItem = UIApplicationShortcutItem.init(type: "scan", localizedTitle: "扫一扫", localizedSubtitle: "添加好友", icon: scanIcon, userInfo: nil)
+        
+        let shareIcon = UIApplicationShortcutIcon.init(type: UIApplicationShortcutIconType.Share)
+        
+        let shareItem = UIApplicationShortcutItem.init(type: "share", localizedTitle: "分享", localizedSubtitle: nil, icon: shareIcon, userInfo: nil)
+        
+        UIApplication.sharedApplication().shortcutItems = [scanItem, shareItem]
+        
+        //也可以使用静态方式创建快捷键
+        // 在 plist 文件中添加 UIApplicationShortcutItem 字段，既可添加默认的快捷键，这样当用户刚下载我们的 app ，即使没有打开，也会有快捷键
+    }
+    
+    //从 3D Touch 快捷键点入
+    func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
+        //先判断 从哪个按钮点
+        if shortcutItem.type == "scan" {
+            // 跳转到扫一扫
+            //先取出 tabBarController 在取出 navigationController
+            ((window?.rootViewController as! CSTabBarController).selectedViewController as! UINavigationController).pushViewController(CSScanViewController(), animated: true)
+        }
     }
     //设置 MobSMSSDK方法
     func setupMob() {

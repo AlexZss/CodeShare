@@ -99,6 +99,8 @@
 		8336D73F1DAF60BE00B22794 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8336D6ED1DAF60BE00B22794 /* YYWeakProxy.m */; };
 		8336D7411DAF62E300B22794 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8336D7401DAF62E300B22794 /* libsqlite3.0.tbd */; };
 		8336D7431DAF674600B22794 /* CSHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336D7421DAF674600B22794 /* CSHelp.swift */; };
+		83704E0A1DBDED72008DDC80 /* CSContactMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83704E081DBDED72008DDC80 /* CSContactMeViewController.swift */; };
+		83704E0B1DBDED72008DDC80 /* CSContactMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83704E091DBDED72008DDC80 /* CSContactMeViewController.xib */; };
 		8390FE8D1DAF8182002180BC /* CSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8390FE8C1DAF8182002180BC /* CSTableViewController.swift */; };
 		8390FE8F1DAF8665002180BC /* CSMyViodeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8390FE8E1DAF8665002180BC /* CSMyViodeListViewController.swift */; };
 		8390FE911DAF8758002180BC /* CSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8390FE901DAF8758002180BC /* CSModel.swift */; };
@@ -320,6 +322,8 @@
 		8336D6EE1DAF60BE00B22794 /* YYKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKit.h; sourceTree = "<group>"; };
 		8336D7401DAF62E300B22794 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		8336D7421DAF674600B22794 /* CSHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSHelp.swift; sourceTree = "<group>"; };
+		83704E081DBDED72008DDC80 /* CSContactMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSContactMeViewController.swift; sourceTree = "<group>"; };
+		83704E091DBDED72008DDC80 /* CSContactMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSContactMeViewController.xib; sourceTree = "<group>"; };
 		8390FE8C1DAF8182002180BC /* CSTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSTableViewController.swift; sourceTree = "<group>"; };
 		8390FE8E1DAF8665002180BC /* CSMyViodeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMyViodeListViewController.swift; sourceTree = "<group>"; };
 		8390FE901DAF8758002180BC /* CSModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSModel.swift; sourceTree = "<group>"; };
@@ -419,6 +423,8 @@
 				83EF16751DB6033A00957947 /* CSMyQRCodeViewController.swift */,
 				83D458E51DB6FF7700BBE93F /* CSCoreGraphicsViewController.swift */,
 				83D458EB1DB720F400BBE93F /* CSLayerViewController.swift */,
+				83704E081DBDED72008DDC80 /* CSContactMeViewController.swift */,
+				83704E091DBDED72008DDC80 /* CSContactMeViewController.xib */,
 			);
 			name = CSMyInfoChildViewContrller;
 			sourceTree = "<group>";
@@ -892,6 +898,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83F6C5C31DAC78040064601D /* LaunchScreen.storyboard in Resources */,
+				83704E0B1DBDED72008DDC80 /* CSContactMeViewController.xib in Resources */,
 				83F6C5C01DAC78040064601D /* Assets.xcassets in Resources */,
 				83F6C5BE1DAC78040064601D /* Main.storyboard in Resources */,
 				83F9E2941DB078A600FC32CA /* CsMyFileCell.xib in Resources */,
@@ -982,6 +989,7 @@
 				8336D6F41DAF60BE00B22794 /* NSKeyedUnarchiver+YYAdd.m in Sources */,
 				8336D7171DAF60BE00B22794 /* YYFrameImage.m in Sources */,
 				8336D73E1DAF60BE00B22794 /* YYTransaction.m in Sources */,
+				83704E0A1DBDED72008DDC80 /* CSContactMeViewController.swift in Sources */,
 				8336D71F1DAF60BE00B22794 /* YYClassInfo.m in Sources */,
 				83D4592B1DB8567000BBE93F /* CSRuntimeViewController.swift in Sources */,
 				83F9E28A1DB06FB300FC32CA /* YZDisplayTitleLabel.m in Sources */,

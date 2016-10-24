@@ -123,6 +123,12 @@ extension CSMySettingViewController {
             cell.accessoryView = UISwitch.init()
         }
         
+        // 要添加 3D Touch 手势，需要先判断此设备是否支持
+        if self.traitCollection.forceTouchCapability == .Available {
+            
+            //如果可用，添加手势
+            self.registerForPreviewingWithDelegate(self, sourceView: cell)
+        }
         return cell
     }
     
@@ -149,6 +155,30 @@ extension CSMySettingViewController {
             layerCtrl.contentInset = contentInset
             
             self.navigationController?.pushViewController(layerCtrl, animated: true)
+        }else if indexPath.section == 3 && indexPath.row == 2 {
+            let contactCtrl = CSContactMeViewController()
+            contactCtrl.title = "联系方式"
+            
+            self.navigationController?.pushViewController(contactCtrl, animated: true)
         }
     }
+}
+
+
+extension CSMySettingViewController: UIViewControllerPreviewingDelegate {
+    // peek 预览下一个控制器
+    func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        
+        let coreGraphicsCtrl = CSCoreGraphicsViewController()
+        coreGraphicsCtrl.title = "核心绘图"
+        coreGraphicsCtrl.contentInset = contentInset
+        
+        return coreGraphicsCtrl
+    }
+    //pop 再次重按，提交
+    func previewingContext(previewingContext: UIViewControllerPreviewing, commitViewController viewControllerToCommit: UIViewController) {
+        //在此方法中实现我们需要的动作 
+        self.navigationController?.pushViewController(viewControllerToCommit, animated: true)
+    }
+    
 }

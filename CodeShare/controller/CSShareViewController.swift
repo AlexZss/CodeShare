@@ -81,10 +81,11 @@ class CSShareViewController: CSScrollViewController {
             runtimeCtrl.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(runtimeCtrl, animated: true)
         }
+        
         //扩展的拖动
         centerButton.dragable = true
-        self.view.dragable = true
-        UIApplication.sharedApplication().keyWindow?.dragable = true
+        //self.view.dragable = true
+        //UIApplication.sharedApplication().keyWindow?.dragable = true
     }
 
     override func didReceiveMemoryWarning() {

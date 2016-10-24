@@ -16,10 +16,11 @@ extension UIView {
     // 默认是不可以在 extension 添加存储属性的 我们可以通过 runtime 的对象绑定达到添加属性的效果
     var dragable: Bool {
         get{
-            return self.panGesture.enabled
+            //return self.panGesture.enabled
+            return false
         }
         set{
-            self.panGesture.enabled = newValue
+            //self.panGesture.enabled = newValue
         }
     }
     //当作我们绑定对象地址的指针
@@ -65,7 +66,7 @@ extension UIView {
 
 extension UIView: UIGestureRecognizerDelegate {
     //当两个相似的手势冲突时，让他们都响应
-    public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRequireFailureOfGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        return true
-    }
+//    public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRequireFailureOfGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+//        return true
+//    }
 }
